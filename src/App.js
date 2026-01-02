@@ -22,6 +22,7 @@ function App() {
     <div style={{ padding: 20 }}>
       <h2>MERN Simple App</h2>
       <p>My app was running</p>
+      <p> Data was modified {new Date().toLocaleDateString("en-IN")}</p>
       <img
         src={bg}
         style={{ objectFit: "cover", width: "100%", height: "671px" }}
