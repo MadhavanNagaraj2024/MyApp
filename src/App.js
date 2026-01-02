@@ -18,11 +18,19 @@ function App() {
     fetchData();
   }, []);
 
+  console.log("users", users);
+
   return (
     <div style={{ padding: 20 }}>
       <h2>MERN Simple App</h2>
       <p>My app was running</p>
       <p> Data was modified {new Date().toLocaleDateString("en-IN")}</p>
+      {users.map((val) => (
+        <div>
+          <p key={val.name}>{val.name}</p>
+          <p key={val.email}>{val.email}</p>
+        </div>
+      ))}
       <img
         src={bg}
         style={{ objectFit: "cover", width: "100%", height: "671px" }}
