@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import bg from "./images/bg.jpg";
 function App() {
   const [users, setUsers] = useState([]);
-  const API_URL = "http://16.171.136.242:5000/api/users";
+  const API_URL = "http://13.51.196.195:5000/api/users";
 
   const fetchData = async () => {
     try {
